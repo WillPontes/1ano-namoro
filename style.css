@@ -7,7 +7,7 @@ body {
     color: #333;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; /* Centraliza verticalmente NO COMPUTADOR */
     min-height: 100vh;
     padding: 20px;
     box-sizing: border-box;
@@ -105,12 +105,19 @@ footer {
 }
 
 /* ========================================
- AJUSTES PARA CELULAR (Responsividade)
+   AJUSTES PARA CELULAR (Responsividade)
  ========================================
  Estes estilos serão aplicados APENAS
  em telas com 600px de largura ou menos.
 */
 @media (max-width: 600px) {
+
+    /* * ESTA É A CORREÇÃO PARA O ESPAÇAMENTO ROSA *
+     Alinha o card branco ao topo da tela no celular 
+    */
+    body {
+        align-items: flex-start;
+    }
 
     /* Reduz o preenchimento (padding) lateral 
      para o conteúdo ter mais espaço 
