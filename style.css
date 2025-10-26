@@ -103,3 +103,63 @@ footer {
     font-size: 1.8rem;
     color: #d81b60;
 }
+
+/* ========================================
+ AJUSTES PARA CELULAR (Responsividade)
+ ========================================
+ Estes estilos serão aplicados APENAS
+ em telas com 600px de largura ou menos.
+*/
+@media (max-width: 600px) {
+
+    /* Reduz o preenchimento (padding) lateral 
+     para o conteúdo ter mais espaço 
+    */
+    .container {
+        padding: 25px 20px;
+        /* Remove a sombra para um visual mais limpo */
+        box-shadow: none; 
+    }
+
+    /* Reduz o tamanho das fontes principais 
+     para caberem melhor na tela 
+    */
+    h1 {
+        font-size: 2.8rem; /* Era 3.5rem */
+    }
+
+    h2 {
+        font-size: 1.25rem; /* Era 1.5rem */
+    }
+
+    p {
+        font-size: 1rem; /* Era 1.1rem */
+        line-height: 1.6;
+    }
+
+    /* Ajusta o contador principal. 
+     Reduz a fonte e o espaçamento.
+    */
+    #contador-formatado {
+        font-size: 1.6rem; /* Era 2.2rem */
+        /* Permite que o contador quebre a linha se necessário */
+        line-height: 1.4; 
+    }
+
+    /* Reduz o espaço mínimo para os números 
+     para o contador não quebrar a linha
+    */
+    #contador-formatado span {
+        min-width: 45px; /* Era 60px */
+    }
+
+    /* Ajusta o contador de milissegundos */
+    #contador-milisegundos {
+        font-size: 1.3rem; /* Era 1.8rem */
+    }
+
+    /* Ajusta o rodapé */
+    footer {
+        font-size: 1.5rem; /* Era 1.8rem */
+    }
+}
